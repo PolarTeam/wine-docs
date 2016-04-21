@@ -11,7 +11,7 @@ import * as actionCreators from 'actions/items';
   state => state.items,
   dispatch => bindActionCreators(actionCreators, dispatch)
 )
-export class List extends Component {
+export class Cellar extends Component {
 
   render() {
     if (!this.props) {
@@ -25,7 +25,7 @@ export class List extends Component {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6
                             col-md-offset-3 col-lg-offset-3">
               <h1>
-                Redux
+                Cellar
               </h1>
             </div>
           </div>
@@ -34,7 +34,7 @@ export class List extends Component {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6
                             col-md-offset-3 col-lg-offset-3">
               <h2>
-                Boilerplate contains:
+                Cellar wine list :
               </h2>
               <Items {...this.props} />
             </div>
