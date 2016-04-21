@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { reduxForm } from 'redux-form';
-import { reset } from 'redux-form';
+import { reduxForm, reset } from 'redux-form';
+
 
 /* component styles */
 import { styles } from './styles.scss';
@@ -13,9 +13,9 @@ export class AddItem extends Component {
     addItem: React.PropTypes.func,
   };
 
-  constructor(props) {
+ /* constructor(props) {
     super(props);
-  }
+  }*/
 
   onAdd = (event) => {
     if (this.props.fields.name.value) {

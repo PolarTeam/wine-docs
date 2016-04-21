@@ -20,6 +20,9 @@ const metaData = {
 
 export class Home extends Component {
   render() {
+    if (!this.metaData) {
+      return null;
+    }
     return (
       <section>
         <DocumentMeta {...metaData} />
@@ -27,6 +30,6 @@ export class Home extends Component {
         <Tools />
         <Projects />
       </section>
-    );
+      );
   }
 }
