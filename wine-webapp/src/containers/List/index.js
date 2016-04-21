@@ -27,11 +27,14 @@ const metaData = {
   dispatch => bindActionCreators(actionCreators, dispatch)
 )
 export class List extends Component {
-  constructor(props) {
+/* constructor(props) {
     super(props);
   }
-
+*/
   render() {
+    if (!this.props) {
+      return null;
+    }
     return (
       <section>
         <DocumentMeta {...metaData} />

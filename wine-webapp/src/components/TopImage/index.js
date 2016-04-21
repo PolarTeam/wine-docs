@@ -9,10 +9,6 @@ import { styles } from './styles.scss';
 
 export class TopImage extends Component {
 
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -38,7 +34,7 @@ export class TopImage extends Component {
                 wait={700}
               >
                 <h1 className="title">
-                  Redux Easy Boilerplate
+                  Wine Cellar Webapp
                 </h1>
               </LoadingOrderAnimation>
               <LoadingOrderAnimation animation="fade-in"

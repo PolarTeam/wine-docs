@@ -10,10 +10,6 @@ export class Items extends Component {
     delItem: React.PropTypes.func,
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   onDelete = (event) => {
     event.preventDefault();
     const index = event.currentTarget.dataset.index;

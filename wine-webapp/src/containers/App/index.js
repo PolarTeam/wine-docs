@@ -13,6 +13,9 @@ export class App extends Component {
   };
 
   render() {
+    if (!this.props.children) {
+      return null;
+    }
     return (
       <section>
         <Header />
